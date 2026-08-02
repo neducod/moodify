@@ -70,7 +70,6 @@ export default function MaximalistMoodify() {
 
   return (
     <>
-    <section>fgfgfgfgf</section>
     <main
       className="min-h-screen transition-all duration-700 ease-out text-white p-6 md:p-12 relative overflow-hidden"
       style={{
