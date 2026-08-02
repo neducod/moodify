@@ -4,6 +4,8 @@ import React, { useState, useRef } from "react";
 import { MAXIMALIST_PRESETS, MaximalistPreset } from "@/data/maximalistPresets";
 import { Copy, Check, Sparkles, Box, Layers, Eye } from "lucide-react";
 
+import Hero from "@/components/hero";
+
 export default function MaximalistMoodify() {
   const [preset, setPreset] = useState<MaximalistPreset>(MAXIMALIST_PRESETS[0]);
   const [color1, setColor1] = useState<string>(MAXIMALIST_PRESETS[0].color1);
@@ -77,6 +79,7 @@ export default function MaximalistMoodify() {
       }}
     >
       {/* Dynamic Background Grid Pattern Overlay */}
+      <Hero/>
       <div
         className="absolute inset-0 pointer-events-none opacity-30 transition-all duration-700"
         style={{
