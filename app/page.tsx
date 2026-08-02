@@ -30,25 +30,4 @@
 
           {/* Generated CSS Box */}
           <div className="bg-slate-900/90 backdrop-blur-md border border-white/10 rounded-2xl p-4 text-white relative">
-            <div className="flex justify-between items-center mb-2">
-              <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">
-                CSS Snippet
-              </span>
-              <button
-                onClick={copyToClipboard}
-                className="flex items-center gap-1.5 text-xs bg-pink-500 hover:bg-pink-600 text-white px-3 py-1.5 rounded-lg font-medium transition-colors"
-              >
-                {copied ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
-                <span>{copied ? "Copied!" : "Copy Code"}</span>
-              </button>
-            </div>
-            <pre className="text-xs font-mono bg-black/50 p-3 rounded-xl overflow-x-auto text-pink-300 leading-relaxed">
-              {generatedGlassCSS}
-            </pre>
-          </div>
-        </div>
-
-      </div>
-    </main>
-  );
-}
+            <div className
